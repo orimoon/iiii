@@ -107,58 +107,73 @@
                 <table>
                     <!-- 웹접근성 요건 추가-->
                     <caption>테이블 설명 : 자세한 설명</caption>
+                    <!--열의 가로 사이즈-->
                     <colgroup>
-                        <col width="40%">
-                        <col span="3">  <!-- span : 열 갯수-->
+                       
+                     <!-- span : 열 갯수-->
+                     <col>
+                     <col width="20%">
+                     <col span="4" width="10%">
+                     
                      </colgroup>
+                     <!--테이블의 구분-->
                      <thead>
                          <tr>
-                            <td>이름</td>
-                            <td>국어</td>
-                            <td>영어</td>
-                            <td>수학</td>
+                            <th scope="col" rowspan="2" colspan="2">과목</th>
+                            <th scope="col" colspan="4">1학년 1반</th>
+                        
+                        
+                         </tr>
+                         <tr>
+                            
+                            <th scope="col">다니엘</th>
+                            <th scope="col">민지</th>
+                            <th scope="col">하니</th>
+                            <th scope="col">혜인</th>
                          </tr>
                         </tr>
                     </thead>
+                    <!--테이블의 본문-->
                     <tbody>
                         <tr>
-                           <td>다니엘</td>
-                           <td>열</td>
-                           <td>열</td>
-                           <td>열</td>
+                           <th scope="row" rowspan="3">공통</th>
+                           <th scope="row">국어</th>
+                           <td>90</td>
+                           <td>60</td>
+                           <td>70</td>
+                           <td>70</td>
                         </tr>
                         <tr>
-                           <td>민지</td>
-                           <td>열</td>
-                           <td>열</td>
-                           <td>열</td>
+                           <th scope="row">영어</th>
+                           <td>80</td>
+                           <td>70</td>
+                           <td>60</td>
+                           <td>60</td>
                         </tr>
                         <tr>
-                           <td>하니</td>
-                           <td>열</td>
-                           <td>열</td>
-                           <td>열</td>
+                           <th scope="row">수학</th>
+                           <td>70</td>
+                           <td>90</td>
+                           <td>80</td>
+                           <td>80</td>
                         </tr>
-                        <tr>
-                           <td>혜인</td>
-                           <td>열</td>
-                           <td>열</td>
-                           <td>열</td>
-                        </tr>
+                       
                         
                     </tbody>
+                    <!--테이블의 요약-->
                     <tfoot>
                         <tr>
-                            <td></td>
-                           <td>열</td>
-                           <td>열</td>
-                           <td>열</td>
+                            <th scope="row" colspan="2">평균점수</th>
+                           <td>70</td>
+                           <td>90</td>
+                           <td>80</td>
+                           <td>70</td>
                         
                     </tfoot>
                 </table>
             </section>
             <style>
-                    table, tr, td {
+                    table, tr, td ,th{
                         border: 3px solid #2f00ff ;
                     }
                     table {
@@ -167,8 +182,171 @@
                     td {
                         height: 70px;
                     }
+                    thead{
+                        background: #58b218;
+                    }
         
             </style>
+
+            <header>
+                <h2>list 태그</h2>
+            </header>
+            <section>
+                <h3>좋아하는 동물</h3>
+                <!--순서없는 목록-->
+                <ul>
+                    <li>개</li>
+                    <li>고양이</li>
+                    <li>다람쥐</li>
+                </ul>
+                <!--순서있는 목록-->
+                <ol>
+                    <li>고양이</li>
+                    <li>개</li>
+                    <li>다람쥐</li>
+                </ol>
+
+                <!--nav-->
+                <h3>메인메뉴</h3>
+                <ul>
+                    <li>
+                        탑
+                        <!--depth2-->
+                        <ul>
+                            <li>블라우스
+                                <!--depth3-->
+                                <ul>
+                                    <li>depth3</li>
+                                    <li>depth3</li>
+                                    <li>depth3</li>
+                                </ul>
+                            </li>
+                            <li>티</li>
+                            <li>셔츠</li>
+                            <li>니트</li>
+                        </ul>
+                    </li>
+                    <li>
+                        아우터
+                        <!--depth2-->
+                        <ul>
+                            <li>자켓</li>
+                            <li>코트</li>
+                            <li>가디건
+                                <!--depth3-->
+                                <ul>
+                                    <li>depth3</li>
+                                    <li>depth3</li>
+                                    <li>depth3</li>
+                                </ul>
+                            </li>
+                            <li>머플러</li>
+                        </ul>
+                        
+                    </li>
+                    <li>
+                        팬츠
+                        <!--depth2-->
+                        <ul>
+                            <li>청바지</li>
+                            <li>짧은바지</li>
+                            <li>긴바지</li>
+                            <li>레깅스</li>
+                        </ul>
+                    </li>
+                    <li>
+                        악세사리
+                        <!--depth2-->
+                        <ul>
+                            <li>귀고리</li>
+                            <li>목걸이</li>
+                            <li>반지</li>
+                            <li>팔찌</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="#">depth1</a>
+                        <ul>
+                            <li>
+                                <a href="#">depth2</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">depth3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">depth3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">depth2</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">depth3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">depth3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                
+                    <li>
+                        <a href="#">depth1</a>
+                        <ul>
+                            <li>
+                                <a href="#">depth2</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">depth3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">depth3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">depth2</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">depth3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li></li>
+                    <li>
+                        <a href="#">depth1</a>
+                        <ul>
+                            <li>
+                                <a href="#">depth2</a>
+                            </li>
+                            <li>
+                                <a href="depth2"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">depth1</a>
+                        <ul>
+                            <li>
+                                <a href="#">depth2</a>
+                            </li>
+                            <li>
+                                <a href="#">depth2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+
+
+            </section>
 
 
 
