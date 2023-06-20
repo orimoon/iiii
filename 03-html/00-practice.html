@@ -1,44 +1,39 @@
-<!-- 문서의형식선언(html5) -->
 <!DOCTYPE html>
-<html lang="ko">
-    <!-- head : 페이지설정-->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naver</title>
-    <meta property="og:title" content="네이버">
-    <meta property="og:description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
-    <meta property="og:image" content="https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png">
-    <meta property="og:url" content="https://www.naver.com/">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="페이지 제목">
-    <meta name="twitter:description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
-    <meta name="twitter:image" content="https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png">
-    <!-- 파비콘 설정-->
-    <link rel="icon" type="image/x-icon" href="https://www.naver.com/favicon.ico?1">
-    <title>유진건설 대담한 특권</title>
-    <!-- Internal CSS -->
-    <style>
-        header {
-            border-bottom: 1px solid hsl(333, 62%, 57%);
-        }
-    </style>
-    <!-- External CSS : 이거 사용-->
-    <link rel="stylesheet" href="./css/comm.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>media</h1>
 
-<body>
-  <ul class="nav">
-    <li><a class="in" href="./project.php">프로젝트</a></li>
-    <li class="active"><a class="in" href="./about.php">회사소개</a></li>
-    <li><a class="in" href="./recruit.php">채용문의</a></li>
-    <li><a class="in" href="./inquiry.php">의뢰하기</a></li>
-    </ul>
-    <button type="button" class="btn-allmenu active"><span class="in">전체메뉴 열기</span></button>
+    <h2>video</h2>
+    <video
+      src="https://www.w3schools.com/html/mov_bbb.mp4"
+      autoplay
+      controls
+      muted
+      loop
+    ></video>
 
-    <div class="msg">
-      우리는<br>브랜드와 세상을<br>연결합니다<span class="fc">.</span>
-    </div>
-</body>
-        
+    <h2>audio</h2>
+    <audio
+      src="https://www.w3schools.com/html/horse.ogg"
+      autoplay
+      controls
+      muted
+    ></audio>
+
+    <h2>youtube</h2>
+    <iframe
+      width="1280"
+      height="720"
+      src="https://www.youtube.com/embed/2R_S5TgDWMY?playlist=2R_S5TgDWMY&loop=1"
+      title="NCT DREAM 엔시티 드림 &#39;Broken Melodies&#39; MV"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </body>
 </html>
