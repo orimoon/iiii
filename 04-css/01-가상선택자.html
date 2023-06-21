@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상선택자</title>
+    |
+    <style>
+      /* reset */
+      * {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>가상선택자</h1>
+    <h2>순서</h2>
+    <ul class="lst-">
+      <li>menu 1</li>
+      <li>menu 2</li>
+      <li>menu 3</li>
+      <li>menu 4</li>
+    </ul>
+    <style>
+      .lst- {
+        border: 5px solid greenyellow;
+      }
+      .lst- li {
+        margin: 5px;
+        border: 5px solid pink;
+      }
+      .lst- li:first-child {
+        background: yellow;
+      }
+      .lst- li:nth-child(2) {
+        background: #16cd10;
+      }
+      .lst- li:nth-child(3) {
+        background: #203df7;
+      }
+      .lst- li:last-child {
+        background: #ce22c0;
+      }
+      .lst- li:hover {
+        background: #000;
+        color: white;
+      }
+    </style>
+    <h2>링크 가상선택자</h2>
+    <a href="#">링크 가상선택자</a>
+    <style>
+      a {
+        font-size: 20px;
+        color: #000;
+      }
+      a:hover {
+        color: #f30808;
+      }
+      a:active {
+        color: #3ddb04;
+      }
+      a:visited {
+        color: #203df7;
+      }
+    </style>
+    <h2>가상 엘리먼트 선택자</h2>
+    <ul class="lst-2">
+      <li>
+        <a href="#">공지사항 글 그르르르르르그르ㅡ그르르그르르ㅡ그르아라르 1</a>
+      </li>
+      <li>
+        <a href="#">공지사항 글 그르르르르르그르ㅡ그르르그르르ㅡ그르아라르 2</a>
+      </li>
+      <li>
+        <a href="#">공지사항 글 그르르르르르그르ㅡ그르르그르르ㅡ그르아라르 3</a>
+      </li>
+      <li>
+        <a href="#">공지사항 글 그르르르르르그르ㅡ그르르그르르ㅡ그르아라르 4</a>
+      </li>
+    </ul>
+    <style>
+      .lst-2 a::before {
+        content: "before";
+      }
+      .lst-2 a::after {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #000;
+      }
+      .lst-2 a {
+        color: red;
+      }
+      .lst-2 li::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #000;
+        border-radius: 10px;
+        margin-right: 10px;
+      }
+      .lst-2 li::after {
+        content: "뒤뒤뒤";
+      }
+    </style>
+    <ul class="lst-3">
+      <li>menu1</li>
+      <li>menu2</li>
+      <li>menu3</li>
+      <li>menu4</li>
+    </ul>
+    <style>
+      .lst-3 {
+        display: flex;
+      }
+      .lst-3 li::after {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #000;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .lst-3 li:last-child::after {
+        display: none;
+      }
+      .lst-3::before {
+        content: "";
+        background: red;
+        display: inline-block;
+        width: 1px;
+        height: 30px;
+        margin-right: 10px;-
+      }
+      .lst-3::after {
+        content: "";
+        background: red;
+        display: inline-block;
+        width: 1px;
+        height: 30px;
+        margin-left: 10px;
+      }
+    </style>
+  </body>
+</html>
