@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>font|css</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        color: #222328;
+        /* text-decoration: none; */
+        list-style: none;
+        box-sizing: border-box;
+        /* 안전 글꼴 */
+        font-family: "맑은 고딕" "helvetica" "Malgun Gothic";
+        /* font-size: 14px; */
+        font-size: 16px;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Kablammo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>font</h1>
+    <h2>일반</h2>
+    <div class="font1">
+      <strong>타이틀</strong>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur
+        velit a quo doloremque, facere atque illum numquam est repudiandae
+        asperiores dolore, error molestias consectetur harum nam ipsum,
+        necessitatibus sunt soluta.
+      </p>
+      <i>기울어짐</i>
+      <span>기울어짐<b>기울어짐</b></span>
+    </div>
+    <style>
+      h2 {
+        font-size: 60px;
+        font-family: "Gasoek One", sans-serif;
+      }
+      .font1 span {
+        font-size: 3.75rem;
+      }
+      .font1 strong {
+        font-family: "나눔고딕";
+        font-size: 40px;
+        font-weight: normal;
+      }
+      .font1 {
+        font-family: "Kablammo", cursive;
+      }
+      .font1 em,
+      i {
+        font-style: normal;
+        /* font-weight: bold; */
+        font-size: 60px;
+      }
+    </style>
+
+    <h2>font size</h2>
+    <strong>vw</strong>
+    <div class="vw">responsive text</div>
+    <div class="vh">responsive text</div>
+
+    <style>
+      .vw {
+        font-size: 17vw;
+      }
+      .vh {
+        font-size: 10px;
+      }
+    </style>
+
+    <h2>text</h2>
+    <strong>vertical align</strong>
+    <div class="ver">
+      <img src="./images/YouTube_black.png" alt="youtube" />유튜브
+    </div>
+    <style>
+      .ver {
+        font-size: 30px;
+      }
+      .ver img {
+        vertical-align: middle;
+        margin-top: -5px;
+      }
+    </style>
+    <strong>decoration</strong>
+    <a href="#">언더라인 글씨</a>
+    <style>
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </body>
+</html>
