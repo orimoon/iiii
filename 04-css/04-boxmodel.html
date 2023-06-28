@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박스모델</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>박스모델</h1>
+
+    <h2>가로사이즈</h2>
+
+    <div class="box1">
+      <span>span태그</span>
+      <span>span태그</span>
+      <div>div 태그</div>
+      <div>div 태그</div>
+    </div>
+
+    <style>
+      .box1 {
+        background: red;
+      }
+      .box1 span {
+        /* display: block; */
+        /* height: 100px;
+        width: 100px; */
+        background: yellowgreen;
+      }
+      .box1 div {
+        /* height: 100px; */
+        width: 50%;
+        background: purple;
+      }
+    </style>
+    <br />
+    <h2>세로사이즈</h2>
+    <div class="box2">
+      <div></div>
+    </div>
+    <style>
+      .box2 {
+        background: gray;
+      }
+      .box2 div {
+        height: 100vh;
+        background: yellow;
+      }
+    </style>
+
+    <h2>max-width</h2>
+    <div class="box3">max-width</div>
+    <style>
+      .box3 {
+        margin: auto;
+        min-width: 320px;
+        height: 100px;
+        max-width: 500px;
+        height: 100px;
+        background: greenyellow;
+      }
+    </style>
+
+    <h2>margin</h2>
+    <div class="box4">
+      <div>box4-1</div>
+      <div>box4-2</div>
+      <div>box4-3</div>
+      <div>box4-5</div>
+      <div>box4-6</div>
+    </div>
+    <style>
+      .box4 {
+        margin: 10px 20px 30px 40px;
+        background: red;
+      }
+      .box4 div {
+        width: 100px;
+        height: 100px;
+
+        background: purple;
+      }
+      .box4 .box4-1 {
+        margin-top: 100px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+      }
+      .box4 .box4-2 {
+        margin: 500px;
+      }
+      .box4 .box4-3 {
+        margin: 20px 50px;
+      }
+      .box4 .box4-5 {
+        margin: 0 auto;
+      }
+      .box4 .box4-6 {
+      }
+    </style>
+    <h2>padding</h2>
+    <div class="box5">
+      <div>padding1</div>
+      <div>padding2</div>
+      <div>padding3</div>
+      <br />
+      <div>padding4</div>
+      <div>padding5</div>
+    </div>
+    <style>
+      .box5 div {
+        display: inline-block;
+        border: 5px solid #000;
+        background: powderblue;
+      }
+      .box5 :first-child {
+        padding: 10px;
+      }
+      .box5 :nth-child(2) {
+        margin: 0 25px;
+        padding: 20px 50px;
+      }
+      .box5 :nth-child(3) {
+        padding: 20px 100px 50px;
+      }
+      .box5 :nth-child(4) {
+        width: 100px;
+        height: 100px;
+      }
+      .box5 :nth-child(5) {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+    <div class="box6">
+      box6
+      <div>padding4</div>
+      <div>padding5</div>
+      <div>padding6</div>
+      <div>padding7</div>
+    </div>
+    <style>
+      .box6 div {
+        width: 100px;
+        height: 100px;
+        background: #c42929;
+      }
+      .box6 div:nth-child(2) {
+        width: 60px;
+        height: 60px;
+        padding: 20px;
+      }
+      .box6 :first-child {
+        padding: 10px 30px;
+      }
+      .box6 :nth-child(2) {
+        width: 60px;
+        height: 60px;
+        padding: 20px;
+      }
+      .box6 :nth-child(3) {
+        width: 40px;
+        height: 80px;
+        padding: 10px 30px;
+      }
+      .box6 :nth-child(4) {
+        box-sizing: border-box;
+        padding: 10px 30px;
+      }
+    </style>
+    <h2>border</h2>
+    <div class="box7">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <style>
+      .box7 div {
+        width: 100px;
+        height: 100px;
+        background: palevioletred;
+      }
+      .box7 div:first-child {
+        border: 10px solid rgb(17, 0, 255, 0.5);
+        border-radius: 5px;
+      }
+
+      .box7 div:nth-child(2) {
+        border: 10px solid rgb(17, 0, 255, 0.5) dotted;
+      }
+      .box7 div:nth-child(4) {
+        border-bottom: 1px solid #000;
+      }
+    </style>
+  </body>
+</html>
