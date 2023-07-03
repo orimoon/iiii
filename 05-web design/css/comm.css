@@ -97,3 +97,161 @@
 .goto {
   width: 340px;
 }
+.goto ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 180px;
+}
+.goto li {
+  width: calc(50% - 5px);
+  height: calc(50% - 5px);
+  /* width: 48%; */
+  background: blue;
+}
+.goto a {
+  display: block;
+  height: 100%;
+  background: red;
+}
+.tabs-wrap {
+  position: relative;
+  width: calc(100% / 2 - 230px);
+  display: flex;
+}
+
+.tabs-wrap .tab-item {
+  width: 50%;
+}
+/* 비활성화 */
+.tabs-wrap .tab-item .tit {
+  height: 50px;
+  padding-top: 15px;
+  border-bottom: 2px solid #333;
+  background: #ddd;
+  text-align: center;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.tabs-wrap .tab-item .cont {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+
+  height: 130px;
+}
+.tabs-wrap .on .tit {
+  color: white;
+  background: #333;
+}
+.tabs-wrap .on .cont {
+  display: block;
+}
+.lis-bbs {
+  padding-top: 8px;
+}
+.lis-bbs li {
+  display: flex;
+  align-items: center;
+}
+.lis-bbs li::before {
+  content: "";
+  display: inline-block;
+  margin-top: -3px;
+  margin-right: 10px;
+  width: 5px;
+  height: 5px;
+  background: #333;
+}
+.lis-bbs li a {
+  display: block;
+  line-height: 2;
+}
+.lis-bbs li a:hover {
+  text-decoration: underline;
+}
+.lis-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+.lis-gallery li {
+  width: 100px;
+
+  padding-top: 5px;
+}
+.lis-gallery li p {
+  overflow: hidden;
+  width: 50%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  border-top: 1px solid #d7d7d7;
+}
+.lis-sns {
+  display: flex;
+}
+.lis-sns li {
+  margin-right: 20px;
+}
+.lis-sns a {
+  display: block;
+  line-height: 100px;
+  height: 100px;
+}
+.logo-foot a {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+/* modal */
+.dimmed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background: rgb(0, 0, 0, 0.5);
+}
+
+.modal-box {
+  position: relative;
+  width: 50%;
+  min-width: 100px;
+  height: 300px;
+  padding: 30px;
+  text-align: center;
+  border: 3px solid #cbbcc8;
+  border-radius: 10px;
+  background: #fff;
+}
+#modal h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+.modal-box button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  color: white;
+  background: black;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}

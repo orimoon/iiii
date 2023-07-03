@@ -77,34 +77,31 @@
         <!--contents-->
         <div class="contents">
           <!--공지사항 &갤러리-->
-          <div class="tabs">
-            <section class="bbs">
-              <h3>공지사항</h3>
+          <div class="tabs-wrap">
+            <!-- 공지사항 tab -->
+            <div class="tab-item on">
+              <h3 class="tit">공지사항</h3>
               <div class="cont">
-                <!--텍스트 리스트-->
-                <ul class="list-bbs">
-                  <li><a href="#"></a>고객 보상 지원 제도 개선 안내</li>
-                  <li><a href="#"></a>회원 등급 혜택 용어 개선 안내</li>
+                <ul class="lis-bbs">
+                  <li><a href="#">고객 보상 지원 제도 개선 안내</a></li>
+                  <li><a href="#">회원 등급 혜택 용어 개선 안내</a></li>
                   <li>
-                    <a href="#"></a>개인정보처리방침 개정 내용 사전 안내
-                    (03/28~)
+                    <a href="#"
+                      >개인정보처리방침 개정 내용 사전 안내 (03/28~)</a
+                    >
                   </li>
-                  <li>
-                    <a href="#"></a>금융상품 판매대리∙중개업무 위탁 확인증서
-                    안내
-                  </li>
-                  <li><a href="#"></a>Live 페이백 이벤트</li>
+                  <li><a href="#">Live 페이백 이벤트</a></li>
                 </ul>
               </div>
-            </section>
-            <section class="gallery">
-              <h3>갤러리</h3>
+            </div>
+            <!-- 갤러리 tab -->
+            <div class="tab-item">
+              <h3 class="tit">갤러리</h3>
               <div class="cont">
-                <!--썸네일 리스트-->
-                <ul class="list-gallery">
+                <ul class="lis-gallery">
                   <li>
                     <a href="#">
-                      <img src="이미지경로" alt="" />
+                      <img src="../images/G1.jpg" alt="오즈 뒷밴딩" />
                     </a>
                     <a href="#">
                       <p>봄 나들이 준비, 러블리 원피스</p>
@@ -112,7 +109,7 @@
                   </li>
                   <li>
                     <a href="#">
-                      <img src="이미지경로" alt="" />
+                      <img src="../images/G1.jpg" alt="오즈뒷밴딩" />
                     </a>
                     <a href="#">
                       <p>봄 나들이 준비, 러블리 원피스</p>
@@ -120,7 +117,7 @@
                   </li>
                   <li>
                     <a href="#">
-                      <img src="이미지경로" alt="" />
+                      <img src="../images/G1.jpg" alt="오즈뒷밴딩" />
                     </a>
                     <a href="#">
                       <p>봄 나들이 준비, 러블리 원피스</p>
@@ -128,8 +125,9 @@
                   </li>
                 </ul>
               </div>
-            </section>
+            </div>
           </div>
+
           <!--배너-->
           <div class="bnr">
             <a href="#">
@@ -139,10 +137,10 @@
           <!--바로가기-->
           <div class="goto">
             <ul>
-              <li><a href="#">"바로가기1"</a></li>
-              <li><a href="#">"바로가기2"</a></li>
-              <li><a href="#">"바로가기3"</a></li>
-              <li><a href="#">"바로가기4"</a></li>
+              <li><a href="#">"바로1"</a></li>
+              <li><a href="#">"바로2"</a></li>
+              <li><a href="#">"바기3"</a></li>
+              <li><a href="#">"바기4"</a></li>
             </ul>
           </div>
         </div>
@@ -150,15 +148,16 @@
 
       <footer class="footer">
         <div class="logo-foot">
-          <a href="#">로고 푸터</a>
+          <a href="#">
+            <img src="../images/fl.png" alt="footer logo" />
+          </a>
         </div>
         <div class="copyright">&#169;copyright</div>
         <div class="sns">
-          <ul>
+          <ul class="lis-sns">
             <li><a href="#">facebook</a></li>
             <li><a href="#">instagram</a></li>
             <li><a href="#">youtube</a></li>
-            <li><a href="#">blog</a></li>
           </ul>
         </div>
       </footer>
@@ -169,7 +168,7 @@
       <div class="modal-box">
         <h3>모달창 제목</h3>
         <p>모달창 내용</p>
-        <button>닫기</button>
+        <button>X</button>
         <div class="test"></div>
       </div>
     </div>

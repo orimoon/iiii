@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box">
+        <div class="absolute">1</div>
+      </div>
+      <div class="box relative">
+        <div class="absolute">2</div>
+      </div>
+      <div class="box static">
+        <div class="absolute">3</div>
+      </div>
+    </div>
+    <h2>sticky</h2>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+
+    <style>
+      .parent {
+        height: 300px;
+        background: rebeccapurple;
+      }
+      .wrap {
+        background: lightblue;
+        height: 200vh;
+      }
+      .relative {
+        position: relative;
+        top: 100px;
+        left: 300px;
+      }
+      .absolute {
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        /* width: 50px; */
+        height: 70px;
+        background: green;
+      }
+      .box {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background: tomato;
+        border: 1px dotted red;
+      }
+      .static {
+        position: static;
+      }
+    </style>
+    <h2>fixed</h2>
+    <header class="fixed">header</header>
+    <div class="footer">footer</div>
+    <style>
+      /* fixed 뷰포트 기준 */
+      .fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        height: 100px;
+        background: blue;
+        border: dotted black;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        background: gray;
+
+        body {
+          padding-top: 100px;
+          padding-bottom: 100px;
+        }
+      }
+    </style>
+  </body>
+</html>
