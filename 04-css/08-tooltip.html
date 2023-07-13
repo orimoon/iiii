@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>etc | css</title>
+  </head>
+  <body>
+    <h1>tooltip</h1>
+
+    <div class="tooltip-wrap">
+      tooltip 보기
+      <div class="item top">top</div>
+      <div class="item bottom">bottom</div>
+    </div>
+
+    <style>
+      .bottom::after {
+        top: 0;
+        left: 50%;
+        transform: rotate(-180deg);
+        translate: ;
+      }
+      .bottom {
+        position: absolute;
+        bottom: -35px;
+        left: 50%;
+      }
+      .top {
+        position: absolute;
+        top: -35px;
+        left: 50%;
+        margin-left: -25px;
+      }
+      .tooltip-wrap {
+        display: inline-block;
+        position: relative;
+        margin: 100px;
+        font-weight: bold;
+        font-size: 20px;
+        color: blue;
+        background: greenyellow;
+      }
+      .item::after {
+        content: "";
+        border-width: 5px;
+        border-style: solid;
+        position: absolute;
+
+        border-color: red transparent transparent transparent;
+      }
+
+      .item {
+        position: absolute;
+        /* bottom: -100px; */
+
+        /* left: 50%; */
+        display: inline-block;
+        width: 50px;
+        padding: 5px 0px;
+        font-size: 12px;
+        font-weight: normal;
+        color: #fff;
+        background: #555;
+        border-radius: 5px;
+        text-align: center;
+        box-sizing: border-box;
+        /* transform: translateX(-50%); */
+        /* word-break: break-all; */
+      }
+    </style>
+  </body>
+</html>
