@@ -1,5 +1,14 @@
 @charset "UTF-8";
+:root {
+  --primary: #0060ff;
+  --line: #dbdbdb;
+  --txt: #5a70e0;
+  --w: #fff;
+  --b: #111;
 
+  --widthwrap: 1200px;
+  --slideheight: 300px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +16,7 @@
   text-decoration: none;
   box-sizing: border-box;
   line-height: 1.5;
-  color: #222328;
+  color: var(--txt);
 }
 
 .wrap {
@@ -38,7 +47,7 @@
   position: relative;
 }
 .gnb .depth1 > li:last-child .depth2 {
-  border-right: 1px solid #000;
+  border-right: 1px solid var(--line);
 }
 .gnb .depth1 > li > a {
   display: block;
